@@ -9,6 +9,12 @@ Introduction
 This library provides a python wrapper to access Uber's API. https://developer.uber.com/
 
 ============
+Dependencies
+============
+
+* httplib2
+
+============
 Documentation
 ============
 
