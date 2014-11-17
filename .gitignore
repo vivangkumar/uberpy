@@ -1,1 +1,4 @@
-.idea
+
+# BS that pycharm adds in
+.idea/
+*.iml
