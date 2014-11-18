@@ -6,6 +6,10 @@ Specify modules to be imported.
 '''
 
 from uber import Uber
+from errors import (
+    UnauthorisedException, MalformedRequestException, InvalidRequestException,
+    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberPyException
+)
 
 try:
     import httplib2
