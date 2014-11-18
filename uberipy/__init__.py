@@ -5,7 +5,7 @@ __version__ = '1.0'
 Specify modules to be imported.
 '''
 
-import json
+from uber import Uber
 
 try:
     import httplib2

@@ -40,10 +40,13 @@ Future versions will, however support OAuth 2.0.
 
 Check out the latest official [API documentation] at (https://developer.uber.com/v1/endpoints/) for a detailed reference.
 
+First, import uberipy:
+```python
+from uberipy import Uber
+```
+
 Create a new Uber instance as follows:
 ```python
-from uber import Uber
-
 uber = Uber(client_id, server_token, secret)
 ```
 

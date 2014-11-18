@@ -4,6 +4,7 @@ from api import Api
 from uber_product import UberProduct
 from errors import UberPyException
 
+
 class Uber(Api):
 
     """

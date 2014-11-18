@@ -2,10 +2,12 @@ __author__ = 'Vivan'
 
 import json
 from httplib2 import Http
-
-from errors import UnauthorisedException, MalformedRequestException, InvalidRequestException, \
-    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberPyException
 from urllib import urlencode
+
+from errors import (
+    UnauthorisedException, MalformedRequestException, InvalidRequestException,
+    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberPyException
+)
 
 
 class Api(object):
