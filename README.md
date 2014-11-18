@@ -41,16 +41,21 @@ Future versions will, however support OAuth 2.0.
 Check out the latest official API documentation at https://developer.uber.com/v1/endpoints/
 
 Create a new Uber instance as follows:
-```
+```python
 uber = Uber(client_id, server_token, secret)
 ```
 
 This will give access to the underlying API methods.
+
 ### JSON Methods
 
 #### GET /v1/products - get_products(latitude, longitude)
 
 #### GET /v1/estimates/price - get_fare_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
+
+#### GET /v1/estimates/time - get_time_estimate(start_latitude, start_longitude, customer_uuid, product_id)
+
+#### GET /v1/promotions - get_promotions(start_latitude, start_longitude, end_latitude, end_longitude)
 
 ### Todo
 
