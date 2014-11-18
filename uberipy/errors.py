@@ -106,13 +106,13 @@ class ServerException(Exception):
         return self.message
 
 
-class UberPyException(Exception):
+class UberipyException(Exception):
     """
     General exception.
     """
 
     def __init__(self, message):
-        super(UberPyException, self).__init__()
+        super(UberipyException, self).__init__()
         self.message = message
 
     @property

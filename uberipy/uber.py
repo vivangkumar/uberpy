@@ -2,7 +2,7 @@ __author__ = 'Vivan'
 
 from api import Api
 from uber_product import UberProduct
-from errors import UberPyException
+from errors import UberipyException
 
 
 class Uber(Api):
@@ -59,7 +59,7 @@ class Uber(Api):
                     prod["image"]
                 )
             else:
-                raise UberPyException("Product does not exist.")
+                raise UberipyException("Product does not exist.")
 
     def get_fare_estimate(self, start_latitude, start_longitude, end_latitude, end_longitude):
         """
