@@ -10,5 +10,4 @@ import json
 try:
     import httplib2
 except ImportError:
-    print "Please ensure that the httplib2 package is installed."
-
+    raise Exception('uber-py requires the installation of httplib2')
