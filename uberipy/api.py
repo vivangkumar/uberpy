@@ -16,7 +16,7 @@ class Api(object):
 
     def __init__(self, client_id, server_token, secret):
         """
-        Instantiate a new uber-py.Api object.
+        Instantiate a new uberipy.Api object.
         :param client_id: Client ID for an application provided by Uber.
         :param server_token: Server token for an application provided by Uber.
         :param secret: Secret for an application provided by Uber.

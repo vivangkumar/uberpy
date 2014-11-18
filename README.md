@@ -1,4 +1,4 @@
-# uber-py
+# uberipy
 
 A python based wrapper for [Uber's public API] (https://developer.uber.com/)
 It provides flexibility to retrieve JSON responses from the API as well as translating them to objects.
@@ -24,7 +24,7 @@ To install by downloading the source:
 
 Alternatively, using pip:
 
-    sudo pip install uber-py
+    sudo pip install uberipy
 
 ### Authorisation
 
@@ -95,7 +95,7 @@ print json.dumps(fare_estimate, sort_keys=True, indent=4, separators=(',', ': ')
 
 #### GET /v1/estimates/time - get_time_estimate(start_latitude, start_longitude, customer_uuid, product_id)
 
-Get the estimated time of arrivale of a Uber product.
+Get the estimated time of arrival of a Uber product.
 
 **Parameters**
 
