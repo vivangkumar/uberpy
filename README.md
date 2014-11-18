@@ -55,11 +55,11 @@ This will give access to the underlying API methods.
 
 This method returns a list of all the products that are available in the area based on location coordinates.
 
-** Parameters **
+**Parameters**
 - latitude (float) Represents the latitude component of location.
 - longitude (float) Represents the longitude component of location.
 
-** Usage **
+**Usage**
 
 ```python
 latitude = 51.5286416
@@ -69,7 +69,7 @@ uber_products = uber.get_products(latitude, longitude)
 print json.dumps(products, sort_keys=True, indent=4, separators=(',', ': '))
 ```
 
-** Returns **
+**Returns**
 
 ````
 {
