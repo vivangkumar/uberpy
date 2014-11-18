@@ -42,6 +42,8 @@ Check out the latest official API documentation at https://developer.uber.com/v1
 
 Create a new Uber instance as follows:
 ```python
+from uber import Uber
+
 uber = Uber(client_id, server_token, secret)
 ```
 
