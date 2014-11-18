@@ -31,12 +31,12 @@ Alternatively, using pip:
 #### User credentials
 
 Credentials can be obtained from [Uber's API website] (https://developer.uber.com/)
-This includes a client_id, secret, and server_token
+This includes a client_id, secret, and server_token.
 
 For the initial version, only the server_token is required as OAuth 2.0 is currently not implemented.
 Future versions will, however support OAuth 2.0.
 
-### Documentation
+## Documentation
 
 Check out the latest official API documentation at https://developer.uber.com/v1/endpoints/
 
@@ -46,7 +46,10 @@ uber = Uber(client_id, server_token, secret)
 ```
 
 This will give access to the underlying API methods.
-For example, to get
+### JSON Methods
+#### GET /v1/products - get_products(latitude, longitude)
+
+#### GET /v1/estimates/price - get_fare_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
 
 ### Todo
 
