@@ -105,6 +105,7 @@ class ServerException(Exception):
     def get_message(self):
         return self.message
 
+
 class UberPyException(Exception):
     """
     General exception.
