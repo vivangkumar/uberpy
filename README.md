@@ -47,6 +47,7 @@ uber = Uber(client_id, server_token, secret)
 
 This will give access to the underlying API methods.
 ### JSON Methods
+
 #### GET /v1/products - get_products(latitude, longitude)
 
 #### GET /v1/estimates/price - get_fare_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
