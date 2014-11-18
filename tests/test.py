@@ -1,9 +1,9 @@
 __author__ = 'Vivan'
 
-from uberipy import Uber
 import json
 
-from errors import (
+from uberipy import Uber
+from uberipy import (
     UnauthorisedException, MalformedRequestException, InvalidRequestException,
     UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberipyException
 )
@@ -22,8 +22,15 @@ try:
     end_latitude = 51.5049949
     end_longitude = -0.0103968
 
-    fare_estimate = uber.get_fare_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
-    print json.dumps(fare_estimate, sort_keys=True, indent=4, separators=(',', ': '))
+    time_estimate = uber.get_time_estimate(start_latitude, start_longitude, None, 'ea52c793-1ad7-4c46-96b3-b1836b8cd0f9' )
+    time_object = uber.get_time_estimate_object(time_estimate, "uberx")
+    print time_object.get_estimate
+
+    fare_estimate = uber.get_price_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
+    fare_object = uber.get_price_estimate_object(fare_estimate, "uberexec")
+
+    print fare_object.get_surge_multiplier
+    #print json.dumps(fare_estimate, sort_keys=True, indent=4, separators=(',', ': '))
 
 
 except UberipyException as e:

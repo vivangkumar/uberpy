@@ -1,6 +1,7 @@
 # uberipy
 
-A python based wrapper for [Uber's public API] (https://developer.uber.com/)
+A python based wrapper for [Uber's public API] (https://developer.uber.com/).
+
 It provides flexibility to retrieve JSON responses from the API as well as translating them to objects.
 
 # Version History
@@ -73,7 +74,7 @@ uber_products = uber.get_products(latitude, longitude)
 print json.dumps(uber_products, sort_keys=True, indent=4, separators=(',', ': '))
 ```
 
-#### GET /v1/estimates/price - get_fare_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
+#### GET /v1/estimates/price - get_price_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
 
 This method returns an estimate of the fare for a trip between two locations.
 
