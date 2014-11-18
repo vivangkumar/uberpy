@@ -4,21 +4,27 @@ import json
 from httplib2 import Http
 
 from errors import UnauthorisedException, MalformedRequestException, InvalidRequestException, \
-    UnacceptableContentException, NotFoundException, RateLimitException, ServerException
+    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberPyException
 from urllib import urlencode
 
 
 class Api(object):
 
     """
-    Base class to set up credentials
+    Base class to handle url building, parameter encoding, adding authorisation and receiving responses.
     """
 
     def __init__(self, client_id, server_token, secret):
+        """
+        Instantiate a new uber-py.Api object.
+        :param client_id: Client ID for an application provided by Uber.
+        :param server_token: Server token for an application provided by Uber.
+        :param secret: Secret for an application provided by Uber.
+        """
         self.client_id = client_id
 
-        if self.server_token == '':
-            raise Exception('Server token is required.')
+        if self.server_token == '' or self.server_token is None:
+            raise UberPyException('Server token is required.')
         else:
             self.server_token = server_token
         self.secret = secret
@@ -119,7 +125,7 @@ class Api(object):
             headers['Content-Type'] = 'application/json'
 
         headers['Accept'] = 'application/json'
-        
+
         # Make the request
         response, content = self.client.request(
             uri=uri,
