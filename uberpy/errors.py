@@ -15,6 +15,10 @@ class UnauthorisedException(Exception):
         self.message = message
         self.status = http_response.status
 
+    @property
+    def get_message(self):
+        return self.message
+
 
 class MalformedRequestException(Exception):
     """
@@ -25,6 +29,10 @@ class MalformedRequestException(Exception):
         super(MalformedRequestException, self).__init__()
         self.message = message
         self.status = http_response.status
+
+    @property
+    def get_message(self):
+        return self.message
 
 
 class NotFoundException(Exception):
@@ -37,6 +45,10 @@ class NotFoundException(Exception):
         self.message = message
         self.status = http_response.status
 
+    @property
+    def get_message(self):
+        return self.message
+
 
 class UnacceptableContentException(Exception):
     """
@@ -46,6 +58,10 @@ class UnacceptableContentException(Exception):
         super(UnacceptableContentException, self).__init__()
         self.message = message
         self.status = http_response.status
+
+    @property
+    def get_message(self):
+        return self.message
 
 
 class InvalidRequestException(Exception):
@@ -57,6 +73,10 @@ class InvalidRequestException(Exception):
         self.message = message
         self.status = http_response.status
 
+    @property
+    def get_message(self):
+        return self.message
+
 
 class RateLimitException(Exception):
     """
@@ -67,6 +87,10 @@ class RateLimitException(Exception):
         self.message = message
         self.status = http_response.status
 
+    @property
+    def get_message(self):
+        return self.message
+
 
 class ServerException(Exception):
     """
@@ -76,3 +100,21 @@ class ServerException(Exception):
         super(ServerException, self).__init__()
         self.message = message
         self.status = http_response.status
+
+    @property
+    def get_message(self):
+        return self.message
+
+
+class UberipyException(Exception):
+    """
+    General exception.
+    """
+
+    def __init__(self, message):
+        super(UberipyException, self).__init__()
+        self.message = message
+
+    @property
+    def get_message(self):
+        return self.message
