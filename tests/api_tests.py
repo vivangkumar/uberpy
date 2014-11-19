@@ -4,7 +4,7 @@ __author__ = 'Vivan'
 import unittest
 
 from uberpy.uber import Uber
-from uberpy.errors import  InvalidRequestException
+from uberpy.errors import InvalidRequestException
 
 mock_server_token = ''
 mock_client_id = ''
