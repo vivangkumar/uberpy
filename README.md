@@ -155,6 +155,20 @@ To run the tests, you will have to obtain
 Add them to the tests before you run them.
 You can always comment out the tests you dont want.
 
+### Errors and Exceptions
+
+There are a few possible exceptions that can be thrown based on the error codes sent back by the API.
+You can look out for these errors when implementing.
+
+- *UnauthorisedException*: If the API was accessed using improper credentials (401)
+- *MalformedRequestException*: Malformed request was sent to server (400)
+- *NotFoundException*: Resource was not found (404)
+- *UnacceptableContentException*: Client sent an accepts header for a content type which does not exist on the server. (406)
+- *InvalidRequestException*: If an invalid request is sent (422)
+- *RateLimitException*: If the allocated request quota expires (429)
+- *ServerException*: If the server returns a status code >= 500.
+- *UberpyException*: General exceptions that may be thrown.
+
 ### Todo
 
 Functions to create Uber objects to extend classes and provide flexibility.
