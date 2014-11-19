@@ -6,7 +6,7 @@ from urllib import urlencode
 
 from errors import (
     UnauthorisedException, MalformedRequestException, InvalidRequestException,
-    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberipyException
+    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberpyException
 )
 
 
@@ -26,7 +26,7 @@ class Api(object):
         self.client_id = client_id
 
         if self.server_token == '' or self.server_token is None:
-            raise UberipyException('Server token is required.')
+            raise UberpyException('Server token is required.')
         else:
             self.server_token = server_token
         self.secret = secret
