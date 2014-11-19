@@ -144,6 +144,8 @@ promotions = uber.get_promotions(start_latitude, start_longitude, end_latitude, 
 
 ### Todo
 
+Functions to create Uber objects to extend classes and provide flexibility.
+
 Currently, the library does not include any of the OAuth requiring API calls.
 
 These include

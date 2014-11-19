@@ -1,8 +1,6 @@
 __author__ = 'Vivan'
 
 from api import Api
-from uber_product import UberProduct
-from uber_estimate import UberPriceEstimate, UberTimeEstimate
 
 
 class Uber(Api):
@@ -39,26 +37,6 @@ class Uber(Api):
 
         return self.get_json(endpoint, 'GET', query_parameters, None, None)
 
-    @staticmethod
-    def get_product_object(product_json, product_type):
-        """
-        Converts the JSON returned to an UberProduct Object.
-        :param product_json: The products JSON returned by the API.
-        :param product_type: Product type for which the object is required.
-        :return: Object UberProduct
-        """
-
-        for prod in product_json["products"]:
-            if prod["display_name"].upper() == product_type.upper():
-
-                return UberProduct(
-                    prod["product_id"],
-                    prod["description"],
-                    prod["display_name"],
-                    prod["capacity"],
-                    prod["image"]
-                )
-
     def get_price_estimate(self, start_latitude, start_longitude, end_latitude, end_longitude):
         """
         Returns the fare estimate based on two sets of coordinates.
@@ -77,30 +55,6 @@ class Uber(Api):
         }
 
         return self.get_json(endpoint, 'GET', query_parameters, None, None)
-
-    @staticmethod
-    def get_price_estimate_object(price_estimate_json, product_type):
-        """
-        Converts JSON to an UberPriceEstimate Object.
-        @param price_estimate_json: Price estimate JSON returned by Uber API.
-        @param product_type: Type of product to construct the object.
-        @return: Object UberPriceEstimate
-        """
-
-        for price in price_estimate_json["prices"]:
-            if price["display_name"].upper() == product_type.upper():
-
-                return UberPriceEstimate(
-                    price["product_id"],
-                    price["currency_code"],
-                    price["display_name"],
-                    price["estimate"],
-                    price["low_estimate"],
-                    price["high_estimate"],
-                    price["surge_multiplier"],
-                    price["duration"],
-                    price["distance"]
-                )
 
     def get_time_estimate(self, start_latitude, start_longitude, customer_uuid=None, product_id=None):
         """
@@ -127,24 +81,6 @@ class Uber(Api):
             query_parameters['product_id'] = product_id
 
         return self.get_json(endpoint, 'GET', query_parameters, None, None)
-
-    @staticmethod
-    def get_time_estimate_object(time_estimate_json, product_type):
-        """
-        Converts JSON to an UberTimeEstimate Object.
-        @param time_estimate_json: Time estimate JSON returned by Uber API.
-        @param product_type: Type of product to construct the object.
-        @return: Object UberTimeEstimate
-        """
-
-        for time in time_estimate_json["times"]:
-            if time["display_name"].upper() == product_type.upper():
-
-                return UberTimeEstimate(
-                    time["product_id"],
-                    time["display_name"],
-                    time["estimate"]
-                )
 
     def get_promotions(self, start_latitude, start_longitude, end_latitude, end_longitude):
         """

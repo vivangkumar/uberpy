@@ -23,13 +23,8 @@ try:
     end_longitude = -0.0103968
 
     time_estimate = uber.get_time_estimate(start_latitude, start_longitude, None, 'ea52c793-1ad7-4c46-96b3-b1836b8cd0f9' )
-    time_object = uber.get_time_estimate_object(time_estimate, "uberx")
-    print time_object.get_estimate
 
     fare_estimate = uber.get_price_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
-    fare_object = uber.get_price_estimate_object(fare_estimate, "uberexec")
-
-    print fare_object.get_surge_multiplier
     #print json.dumps(fare_estimate, sort_keys=True, indent=4, separators=(',', ': '))
 
 
@@ -37,4 +32,3 @@ except UberipyException as e:
     print e.get_message
 #print products
 #print estimate
-
