@@ -71,7 +71,7 @@ latitude = 51.5286416
 longitude = -0.1015987
 
 uber_products = uber.get_products(latitude, longitude)
-print json.dumps(uber_products, sort_keys=True, indent=4, separators=(',', ': '))
+# Do something with it
 ```
 
 #### GET /v1/estimates/price - get_price_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
@@ -94,7 +94,7 @@ end_latitude = 51.5049949
 end_longitude = -0.0103968
 
 fare_estimate = uber.get_fare_estimate(start_latitude, start_longitude, end_latitude, end_longitude)
-print json.dumps(fare_estimate, sort_keys=True, indent=4, separators=(',', ': '))
+# Do something with it
 ```
 
 #### GET /v1/estimates/time - get_time_estimate(start_latitude, start_longitude, customer_uuid, product_id)
@@ -117,7 +117,6 @@ start_longitude = -0.1036919
 time_estimate = uber.get_time_estimate(start_latitude, start_longitude, customer_uuid=None, product_id=None)
 
 # Do something with it
-print json.dumps(time_estimate, sort_keys=True, indent=4, separators=(',', ': '))
 ```
 
 #### GET /v1/promotions - get_promotions(start_latitude, start_longitude, end_latitude, end_longitude)
@@ -140,6 +139,7 @@ end_latitude = 51.5049949
 end_longitude = -0.0103968
 
 promotions = uber.get_promotions(start_latitude, start_longitude, end_latitude, end_longitude)
+# Do something with it
 ```
 
 ### Tests
@@ -149,8 +149,8 @@ To run the tests, you will have to obtain
 - client_id
 - secret
  
- Add them to the tests before you run them.
- You can always comment out the tests you dont want.
+Add them to the tests before you run them.
+You can always comment out the tests you dont want.
 
 ### Todo
 
