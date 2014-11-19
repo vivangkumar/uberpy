@@ -4,14 +4,14 @@ To contribute to this repository, here is a quick guide.
 
 Fork and clone the repository:
 ```
-git clone git@github.com:your-git-username/uberipy.git
+git clone git@github.com:your-git-username/uberpy.git
 ```
 
 Make changes and add tests.
 
 Push to the fork and [submit a pull request] [pr]
 
-[pr]: https://github.com/vivangkumar/uberipy/compare/
+[pr]: https://github.com/vivangkumar/uberpy/compare/
 
 I will try to respond to pull requests as soon as possible.
 Please make sure you type an appropriate commit message.

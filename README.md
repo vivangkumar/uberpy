@@ -1,4 +1,4 @@
-# uberipy
+# uberpy
 
 A python based wrapper for [Uber's public API] (https://developer.uber.com/).
 
@@ -43,7 +43,7 @@ Check out the latest official [API documentation] (https://developer.uber.com/v1
 
 First, import uberipy:
 ```python
-from uberipy import Uber
+from uberpy import Uber
 ```
 
 Create a new Uber instance as follows:

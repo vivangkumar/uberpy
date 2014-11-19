@@ -3,11 +3,11 @@ __author__ = 'Vivan'
 
 import unittest
 
-from uberipy.uber import Uber
-from uberipy.errors import UberipyException
+from uberpy.uber import Uber
+from uberpy.errors import UberipyException
 
 
-class UberipyAuthTests(unittest.TestCase):
+class UberpyAuthTests(unittest.TestCase):
 
     def setUp(self):
         self.mock_server_token = ''
