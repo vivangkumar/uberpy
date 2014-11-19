@@ -39,7 +39,7 @@ Future versions will, however support OAuth 2.0.
 
 ## Documentation
 
-Check out the latest official [API documentation] at (https://developer.uber.com/v1/endpoints/) for a detailed reference.
+Check out the latest official [API documentation] (https://developer.uber.com/v1/endpoints/) for a detailed reference.
 
 First, import uberipy:
 ```python
