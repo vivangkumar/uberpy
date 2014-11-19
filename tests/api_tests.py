@@ -3,15 +3,15 @@ __author__ = 'Vivan'
 
 import unittest
 
-from uberipy.uber import Uber
-from uberipy.errors import  InvalidRequestException
+from uberpy.uber import Uber
+from uberpy.errors import  InvalidRequestException
 
 mock_server_token = ''
 mock_client_id = ''
 mock_secret = ''
 
 
-class UberipyApiTests(unittest.TestCase):
+class UberpyApiTests(unittest.TestCase):
 
     def setUp(self):
         self.uber = Uber(mock_client_id, mock_server_token, mock_secret)

@@ -15,4 +15,4 @@ try:
     import httplib2
 except ImportError:
     import httplib2
-    raise Exception('uberipy requires the installation of httplib2')
+    raise Exception('uberpy requires the installation of httplib2')
