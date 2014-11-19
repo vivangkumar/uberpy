@@ -18,7 +18,7 @@ class Api(object):
 
     def __init__(self, client_id, server_token, secret):
         """
-        Instantiate a new uberipy.Api object.
+        Instantiate a new Api object.
         :param client_id: Client ID for an application provided by Uber.
         :param server_token: Server token for an application provided by Uber.
         :param secret: Secret for an application provided by Uber.
@@ -127,8 +127,6 @@ class Api(object):
             headers['Content-Type'] = 'application/json'
 
         headers['Accept'] = 'application/json'
-
-        # Make the request
         response, content = self.client.request(
             uri=uri,
             method=http_method,

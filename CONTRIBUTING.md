@@ -3,9 +3,11 @@
 To contribute to this repository, here is a quick guide.
 
 Fork and clone the repository:
+
     ```
     git clone git@github.com:your-git-username/uberipy.git
     ```
+    
 Make sure tests pass:
 
 Make changes and add tests for your changes. Pass tests:
