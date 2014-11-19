@@ -8,7 +8,7 @@ Specify modules to be imported.
 from uber import Uber
 from errors import (
     UnauthorisedException, MalformedRequestException, InvalidRequestException,
-    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberipyException
+    UnacceptableContentException, NotFoundException, RateLimitException, ServerException, UberpyException
 )
 
 try:
