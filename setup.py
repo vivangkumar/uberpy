@@ -19,7 +19,7 @@ setup(
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 4 - Beta",
-        "Intended Audience :: Developers"
+        "Intended Audience :: Developers",
         "Topic :: Libraries :: Python Modules",
         "License :: OSI Approved :: MIT License",
     ],
