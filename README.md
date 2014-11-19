@@ -28,7 +28,7 @@ To install by downloading the source:
 
 Alternatively, using pip:
 
-    sudo pip install uberipy
+    sudo pip install uberpy
 
 ### Authorisation
 
