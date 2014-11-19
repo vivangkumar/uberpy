@@ -142,6 +142,16 @@ end_longitude = -0.0103968
 promotions = uber.get_promotions(start_latitude, start_longitude, end_latitude, end_longitude)
 ```
 
+### Tests
+
+To run the tests, you will have to obtain
+- server_token
+- client_id
+- secret
+ 
+ Add them to the tests before you run them.
+ You can always comment out the tests you dont want.
+
 ### Todo
 
 Functions to create Uber objects to extend classes and provide flexibility.
