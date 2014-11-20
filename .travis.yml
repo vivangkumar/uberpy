@@ -1,10 +1,17 @@
+# Travis config
+
 language: python
 python:
     - 2.6
     - 2.7
 
+# Command to run installation
 install:
     - python setup.py install
 
+# Script to run tests
 script: python setup.py test
 
+# Turn of email notifications
+notifications:
+    email: false
