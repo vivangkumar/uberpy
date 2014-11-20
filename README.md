@@ -1,5 +1,7 @@
 # uberpy
 
+[![Build Status](https://travis-ci.org/vivangkumar/uberpy.svg?branch=master)](https://travis-ci.org/vivangkumar/uberpy)
+
 A python based wrapper for [Uber's public API] (https://developer.uber.com/).
 
 It provides flexibility to retrieve JSON responses from the API as well as translating them to objects.
