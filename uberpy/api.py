@@ -11,7 +11,6 @@ from errors import (
 
 
 class Api(object):
-
     """
     Base class to handle url building, parameter encoding, adding authorisation and receiving responses.
     """
@@ -57,7 +56,6 @@ class Api(object):
 
     @staticmethod
     def check_status(content, response):
-
         """
         Check the response that is returned for known exceptions and errors.
         :param response: Response that is returned from the call.

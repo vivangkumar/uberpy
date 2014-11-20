@@ -4,7 +4,6 @@ from api import Api
 
 
 class Uber(Api):
-
     """
     Class holding all Uber API calls. Inherits from the base API class.
     This class is used to provide access to all the API calls which are abstracted as methods.
