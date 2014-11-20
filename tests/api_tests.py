@@ -2,11 +2,12 @@ __author__ = 'Vivan'
 
 
 import unittest
+import os
 
 from uberpy.uber import Uber
 from uberpy.errors import InvalidRequestException
 
-mock_server_token = ''
+mock_server_token = os.environ['UBER_SERVER_TOKEN']
 mock_client_id = ''
 mock_secret = ''
 
