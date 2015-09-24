@@ -2,7 +2,7 @@ __author__ = 'Vivan'
 
 import json
 from httplib2 import Http
-from urllib import urlencode
+from urllib.parse import urlencode
 
 from errors import (
     UnauthorisedException, MalformedRequestException, InvalidRequestException,
