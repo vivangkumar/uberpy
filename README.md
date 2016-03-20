@@ -1,5 +1,7 @@
 # uberpy
 
+**NOTE** This library hasn't been updated in a while and it probably will not be worked on for a while (maybe never). I'm happy for people to pick this up and take it forward.
+
 [![Build Status](https://travis-ci.org/vivangkumar/uberpy.svg?branch=master)](https://travis-ci.org/vivangkumar/uberpy)
 
 A python based wrapper for [Uber's public API] (https://developer.uber.com/).
